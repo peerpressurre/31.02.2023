@@ -41,6 +41,26 @@ int main()
 
 		}
 	}
+	case 2:
+	{
+		for (size_t i = 0; i < 10 + 1; i++)
+		{
+			cout << sym << " " << endl;
+			if (speed == 1)
+			{
+				Sleep(100);
+			}
+			else if (speed == 2)
+			{
+				Sleep(500);
+			}
+			else if (speed == 3)
+			{
+				Sleep(1000);
+			}
+
+		}
+	}
 	default:
 		break;
 	}
@@ -49,17 +69,3 @@ int main()
 
 	return 0;
 }
-
-	//if (speed == 1)
-	//{
-	//	for (size_t i = 0; i < 10 + 1; i++)
-	//	{
-	//		cout << sym << " ";
-	//		if (true)
-	//		{
-
-	//		}
-	//		Sleep(100);
-	//	}
-
-	//}
