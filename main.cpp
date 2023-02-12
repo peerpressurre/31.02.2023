@@ -44,7 +44,7 @@ int main()
 	{
 		system("cls");
 		cout << "LET'S ROLL THE DICE!" << endl;
-		PlaySound(TEXT("dice intro haha.wav"), NULL, SND_FILENAME | SND_ASYNC);
+		PlaySound(TEXT("music dice\\dice intro haha.wav"), NULL, SND_FILENAME | SND_ASYNC);
 		Sleep(2000);
 	}
 	Sleep(2000);
@@ -58,7 +58,7 @@ int main()
 		Sleep(1000);
 		cout << "Computer rolls..." << endl;
 		Sleep(250);
-		PlaySound(TEXT("dice.wav"), NULL, SND_FILENAME | SND_ASYNC);
+		PlaySound(TEXT("music dice\\dice.wav"), NULL, SND_FILENAME | SND_ASYNC);
 		Sleep(2000);
 		if (c11 == 1)
 		{
@@ -180,7 +180,7 @@ int main()
 		u12 = rand() % 6 + 1;
 		cout << "Your turn.. ";
 		cin >> var;
-		PlaySound(TEXT("dice.wav"), NULL, SND_FILENAME | SND_ASYNC);
+		PlaySound(TEXT("music dice\\dice.wav"), NULL, SND_FILENAME | SND_ASYNC);
 		Sleep(2000);
 		if (u11 == 1)
 		{
@@ -308,14 +308,14 @@ int main()
 	{
 		cout << "Congratulations! You Won!" << endl;
 		cout << "Computer = " << csum << " || You = " << usum << endl;
-		PlaySound(TEXT("dice win outro.wav"), NULL, SND_FILENAME | SND_ASYNC);
+		PlaySound(TEXT("music dice\\dice win outro.wav"), NULL, SND_FILENAME | SND_ASYNC);
 		Sleep(7000);
 	}
 	else
 	{
 		cout << "Ha.. Looks like you lost" << endl;
 		cout << "Computer = " << csum << " || You = " << usum << endl;
-		PlaySound(TEXT("dice lose haha.wav"), NULL, SND_FILENAME | SND_ASYNC);
+		PlaySound(TEXT("music dice\\dice lose haha.wav"), NULL, SND_FILENAME | SND_ASYNC);
 		Sleep(2000);
 	}
 	
