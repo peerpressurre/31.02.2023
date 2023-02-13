@@ -21,117 +21,125 @@ int main()
 	cin >> num1;
 	cout << "To: ";
 	cin >> num2;
-	int min = num1, max = num1;
-	for (size_t i = num1 + 1; i < num2 + 1; i++)
+	if (num1 > num2)
 	{
-		if (arr[i] < min)
+		int temp = num1;
+		num1 = num2;
+		num2 = temp;
+	}
+
+	int min, max;
+	min = max = num1 - 1;
+	for (size_t i = num1; i < num2; i++)
+	{
+		if (arr[i] < arr[min])
 		{
-			min = arr[i];
+			min = i;
 		}
-		if (arr[i] > max)
+		if (arr[i] > arr[max])
 		{
-			max = arr[i];
+			max = i;
 		}
 	}
-	cout << endl;
-	if (max == arr[0])
+
+	cout << "In range between " << num1 << " month and " << num2 << " month:" << endl;
+	if (max == 0)
 	{
-		cout << "Your maximum income [ " << max << "$ ] was in January";
+		cout << "Your maximum income was in January - " << arr[max] << "$" << endl;
 	}
-	else if (max == arr[1])
+	else if (max == 1)
 	{
-		cout << "Your maximum income [ " << max << "$ ] was in February";
+		cout << "Your maximum income was in February - " << arr[max] << "$" << endl;
 	}
-	else if (max == arr[2])
+	else if (max == 2)
 	{
-		cout << "Your maximum income [ " << max << "$ ] was in March";
+		cout << "Your maximum income was in March - " << arr[max] << "$" << endl;
 	}
-	else if (max == arr[3])
+	else if (max == 3)
 	{
-		cout << "Your maximum income [ " << max << "$ ] was in April";
+		cout << "Your maximum income was in April - " << arr[max] << "$" << endl;
 	}
-	else if (max == arr[4])
+	else if (max == 4)
 	{
-		cout << "Your maximum income [ " << max << "$ ] was in May";
+		cout << "Your maximum income was in May - " << arr[max] << "$" << endl;
 	}
-	else if (max == arr[5])
+	else if (max == 5)
 	{
-		cout << "Your maximum income [ " << max << "$ ] was in June";
+		cout << "Your maximum income was in June - " << arr[max] << "$" << endl;
 	}
-	else if (max == arr[6])
+	else if (max == 6)
 	{
-		cout << "Your maximum income [ " << max << "$ ] was in July";
+		cout << "Your maximum income was in July - " << arr[max] << "$" << endl;
 	}
-	else if (max == arr[7])
+	else if (max == 7)
 	{
-		cout << "Your maximum income [ " << max << "$ ] was in August";
+		cout << "Your maximum income was in August - " << arr[max] << "$" << endl;
 	}
-	else if (max == arr[8])
+	else if (max == 8)
 	{
-		cout << "Your maximum income [ " << max << "$ ] was in September";
+		cout << "Your maximum income was in September - " << arr[max] << "$" << endl;
 	}
-	else if (max == arr[9])
+	else if (max == 9)
 	{
-		cout << "Your maximum income [ " << max << "$ ] was in October";
+		cout << "Your maximum income was in October - " << arr[max] << "$" << endl;
 	}
-	else if (max == arr[10])
+	else if (max == 10)
 	{
-		cout << "Your maximum income [ " << max << "$ ] was in November";
+		cout << "Your maximum income was in November - " << arr[max] << "$" << endl;
 	}
-	else if (max == arr[11])
+	else if (max == 11)
 	{
-		cout << "Your maximum income [ " << max << "$ ] was in December";
+		cout << "Your maximum income was in December - " << arr[max] << "$" << endl;
 	}
-	cout << endl;
 	//--------------MIN------------------------
 
-	if (min == arr[0])
+	if (min == 0)
 	{
-		cout << "Your minimum income [ " << min << "$ ] was in January";
+		cout << "Your minimum income was in January - " << arr[min] << "$" << endl;;
 	}
-	else if (min == arr[1])
+	else if (min == 1)
 	{
-		cout << "Your minimum income [ " << min << "$ ] was in February";
+		cout << "Your minimum income was in February - " << arr[min] << "$" << endl;;
 	}
-	else if (min == arr[2])
+	else if (min == 2)
 	{
-		cout << "Your minimum income [ " << min << "$ ] was in March";
+		cout << "Your minimum income was in March - " << arr[min] << "$" << endl;;
 	}
-	else if (min == arr[3])
+	else if (min == 3)
 	{
-		cout << "Your minimum income [ " << min << "$ ] was in April";
+		cout << "Your minimum income was in April - " << arr[min] << "$" << endl;;
 	}
-	else if (min == arr[4])
+	else if (min == 4)
 	{
-		cout << "Your minimum income [ " << min << "$ ] was in May";
+		cout << "Your minimum income was in May - " << arr[min] << "$" << endl;;
 	}
-	else if (min == arr[5])
+	else if (min == 5)
 	{
-		cout << "Your minimum income [ " << min << "$ ] was in June";
+		cout << "Your minimum income was in June - " << arr[min] << "$" << endl;;
 	}
-	else if (min == arr[6])
+	else if (min == 6)
 	{
-		cout << "Your minimum income [ " << min << "$ ] was in July";
+		cout << "Your minimum income was in July - " << arr[min] << "$" << endl;
 	}
-	else if (min == arr[7])
+	else if (min == 7)
 	{
-		cout << "Your minimum income [ " << min << "$ ] was in August";
+		cout << "Your minimum income was in August - " << arr[min] << "$" << endl;;
 	}
-	else if (min == arr[8])
+	else if (min == 8)
 	{
-		cout << "Your minimum income [ " << min << "$ ] was in September";
+		cout << "Your minimum income was in September - " << arr[min] << "$" << endl;;
 	}
-	else if (min == arr[9])
+	else if (min == 9)
 	{
-		cout << "Your minimum income [ " << min << "$ ] was in October";
+		cout << "Your minimum income was in October - " << arr[min] << "$" << endl;;
 	}
-	else if (min == arr[10])
+	else if (min == 10)
 	{
-		cout << "Your minimum income [ " << min << "$ ] was in November";
+		cout << "Your minimum income was in November - " << arr[min] << "$" << endl;;
 	}
-	else if (min == arr[11])
+	else if (min == 11)
 	{
-		cout << "Your minimum income [ " << min << "$ ] was in December";
+		cout << "Your minimum income was in December - " << arr[min] << "$" << endl;;
 	}
 	return 0;
 }
